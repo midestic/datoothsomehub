@@ -6,7 +6,7 @@ import { useCartStore } from "@/store/cart-store";
 import { checkoutAction } from "./checkout-action";
 
 export default function CheckoutPage() {
-  const { items, addItem, removeItem, clearCart } = useCartStore();
+  const { items, addItem, removeItem } = useCartStore();
   const total = items.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
