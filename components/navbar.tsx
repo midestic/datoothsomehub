@@ -30,7 +30,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-white shadow">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/" className="hover:text-blue-600">
-          My Ecommerce
+          da_Tooth_Some_Hub
         </Link>
         <div className="hidden md:flex space-x-6">
           <Link href="/">Home</Link>
