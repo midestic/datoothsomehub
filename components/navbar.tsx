@@ -10,6 +10,8 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 
+import { BsFacebook, BsInstagram, BsTiktok } from "react-icons/bs";
+
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const { items } = useCartStore();
@@ -29,7 +31,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white shadow">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
-        <Link href="/" className="hover:text-blue-600">
+        <Link href="/" className="hover:text-blue-600  font-bold ">
           da_Tooth_Some_Hub
         </Link>
         <div className="hidden md:flex space-x-6">
@@ -41,6 +43,32 @@ export default function Navbar() {
             Checkout
           </Link>
         </div>
+
+        <div
+          className=" flex justify-between items-center
+         w-[10%] max-md:hidden"
+        >
+          <Link
+            target="_blank"
+            href={
+              "https://web.facebook.com/badmus.basiratullahititilayo/?_rdc=1&_rdr#"
+            }
+          >
+            <BsFacebook className="h-6 w-6" />
+          </Link>
+
+          <Link
+            href={"https://www.instagram.com/da_toothsome_hub/"}
+            target="_blank"
+          >
+            <BsInstagram className="h-6 w-6" />
+          </Link>
+
+          <Link href={"https://www.tiktok.com/@datoothsomehub"} target="_blank">
+            <BsTiktok className="h-6 w-6" />
+          </Link>
+        </div>
+
         <div className="flex items-center space-x-4">
           <Link href="/checkout" className="relative">
             <ShoppingCartIcon className="h-6 w-6" />
@@ -64,8 +92,11 @@ export default function Navbar() {
         </div>
       </div>
       {mobileOpen && (
-        <nav className="md:hidden bg-white shadow-md">
-          <ul className="flex flex-col p-4 space-y-2">
+        <nav
+          className="md:hidden w-[50%] fixed  h-full bg-white 
+        shadow-2xl"
+        >
+          <ul className="flex flex-col p-4 space-y-10 ">
             <li>
               <Link href="/" className="block hover:text-blue-600">
                 Home
@@ -82,6 +113,34 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
+
+          <div
+            className=" flex justify-between items-center mx-auto mt-[100%] 
+         w-[50%] "
+          >
+            <Link
+              target="_blank"
+              href={
+                "https://web.facebook.com/badmus.basiratullahititilayo/?_rdc=1&_rdr#"
+              }
+            >
+              <BsFacebook className="h-6 w-6" />
+            </Link>
+
+            <Link
+              href={"https://www.instagram.com/da_toothsome_hub/"}
+              target="_blank"
+            >
+              <BsInstagram className="h-6 w-6" />
+            </Link>
+
+            <Link
+              href={"https://www.tiktok.com/@datoothsomehub"}
+              target="_blank"
+            >
+              <BsTiktok className="h-6 w-6" />
+            </Link>
+          </div>
         </nav>
       )}
     </nav>
