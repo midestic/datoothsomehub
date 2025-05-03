@@ -43,8 +43,8 @@ export default function ContactForm() {
         className={
           !modal
             ? `hidden`
-            : ` border border-black md:w-[30%] md:fixe  w-[70%] rounded-2xl  mx-auto text-center absolute h-[300px]
-       z-100 bg-white text-black flex flex-col justify-center items-center`
+            : ` border border-black md:w-[30%] translate-y-[-50px]  w-[70%] rounded-2xl  mx-auto text-center absolute h-fit p-5
+       z-100 bg-white text-black flex flex-col justify-center items-center md:translate-y-[-150px] mb-10`
         }
       >
         <h1 className="font-bold">Message Sent </h1>
