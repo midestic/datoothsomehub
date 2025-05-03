@@ -2,12 +2,6 @@
 
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import {
-  BsMenuButton,
-  BsMenuDown,
-  BsToggle2Off,
-  BsToggleOff,
-} from "react-icons/bs";
 
 export default function ContactForm() {
   const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID!;
