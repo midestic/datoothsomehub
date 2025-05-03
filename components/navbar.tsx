@@ -42,6 +42,10 @@ export default function Navbar() {
           <Link href="/checkout" className="hover:text-blue-600">
             Checkout
           </Link>
+
+          <Link href="/contact" className="hover:text-blue-600">
+            Contact Us
+          </Link>
         </div>
 
         <div
@@ -110,6 +114,12 @@ export default function Navbar() {
             <li>
               <Link href="/checkout" className="block hover:text-blue-600">
                 Checkout
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/contact" className="block hover:text-blue-600">
+                Contact Us
               </Link>
             </li>
           </ul>
