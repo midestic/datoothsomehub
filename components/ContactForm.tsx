@@ -3,6 +3,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
+//deleted unused icons
+
 export default function ContactForm() {
   const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID!;
   const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID!;
