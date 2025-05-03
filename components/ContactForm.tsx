@@ -12,7 +12,7 @@ export default function ContactForm() {
 
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
-  const [message, setMessage] = useState<any>("");
+  const [message, setMessage] = useState<string | number>("");
   const [loading, setIsloading] = useState<boolean>(false);
 
   const [modal, setModal] = useState<boolean>(false);
