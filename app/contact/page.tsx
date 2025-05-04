@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import ContactForm from "@/components/ContactForm";
 import { stripe } from "@/lib/stripe";
 

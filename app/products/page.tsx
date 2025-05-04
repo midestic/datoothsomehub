@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import { ProductList } from "@/components/ProductList";
 import { stripe } from "@/lib/stripe";
 import React from "react";

@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import Image from "next/image";
 import { stripe } from "@/lib/stripe";
 import { Button } from "@/components/ui/button";
